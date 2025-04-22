@@ -1,3 +1,6 @@
+USE BDPeluqueria;
+GO
+
 -- Tabla de Clientes
 CREATE TABLE Clientes (
     IdCliente INT PRIMARY KEY IDENTITY(1,1),
