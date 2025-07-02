@@ -69,9 +69,9 @@ END;
 previamente cargada por otro proceso, la siguiente info:'
 'customer_num, lname, fnmae, company, addres1, city, state' 
 'por cada fila de la tabla clientesAltaOnline se debera evaluar '
-ï 'si el cliente existe en customer, modificar dicho cliente en la tabla custoemr con los 
+‚Ä¢ 'si el cliente existe en customer, modificar dicho cliente en la tabla custoemr con los 
 datos leidos de la tabla clientesAltaOnline'
-ï 'si el cliente no existe en customer, se debera insertar el cliente en al tabla custoemr 
+‚Ä¢ 'si el cliente no existe en customer, se debera insertar el cliente en al tabla custoemr 
 con los datos leidos de la tabla clientesAltaOnline'
 'el procedimiento debera almacenar por cada operacion realizada una fila en al tabla auditoria 
 con los siguientes atributos':
@@ -151,13 +151,13 @@ DEALLOCATE actCur
 
 END;
 
-/*Crear un procedimiento procBorraOC que reciba un n˙mero de orden de compra por par·metro y realice la
-eliminaciÛn de la misma y sus Ìtems.
-Deber· manejar una transacciÛn y deber· manejar excepciones ante alg˙n error que ocurra.
-El procedimiento deber· guardar en una tabla de auditoria auditOC los siguientes datos order_num,
+/*Crear un procedimiento procBorraOC que reciba un n√∫mero de orden de compra por par√°metro y realice la
+eliminaci√≥n de la misma y sus √≠tems.
+Deber√° manejar una transacci√≥n y deber√° manejar excepciones ante alg√∫n error que ocurra.
+El procedimiento deber√° guardar en una tabla de auditoria auditOC los siguientes datos order_num,
 order_date, customer_num, cantidad_items, total_orden (SUM(total_price)), cant_productos_comprados
-(SUM(quantity)), cantidad de Ìtems.
-Ante un error deber· almacenar en una tablas erroresOC, order_num, order_date, customer_num,
+(SUM(quantity)), cantidad de √≠tems.
+Ante un error deber√° almacenar en una tablas erroresOC, order_num, order_date, customer_num,
 error_ocurrido VARCHAR(50)*/
 GO 
 CREATE PROCEDURE borrarOC @numeroOC int
